@@ -1,0 +1,297 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: nunito_san;
+    font-style: initial;
+}
+textarea:focus,
+input:focus{
+    outline: none;
+}
+
+select:focus{
+	outline: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+ul{
+	padding-left: 0;
+	margin-bottom: 0;
+	padding-inline-start: 0;
+}
+ul li {
+	list-style: none;
+	list-style-type: none;
+}
+
+
+/* ######################## Image - Effect  ######################## */
+.img-responsive {display: block;width: 100%;height: 100%;overflow: hidden;}
+.img-responsive img {display: block;width: 100%;height: auto;}
+.img-fit { position: relative; display: block; text-align: center}
+.img-fit > img { max-width: 100%; max-height: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%); transform: translate(-50%,-50%)}
+.img-cover {display: block;width: 100%;height: 100%}
+.img-cover img {display: block;width: 100%;height: 100%;object-fit: cover}
+.img-fit-fill {display: block;width: 100%;height: 100%}
+.img-fit-fill img {display: block;width: inherit;height: inherit;object-fit: fill}
+.img-contain {display: block;width: 100%;height: 100%}
+.img-contain img {display: block;width: 100%;height: 100%;object-fit: contain}
+.img-scaledown {display: block;width: 100%;height: 100%}
+.img-scaledown img {display: block;width: 100%;height: 100%;object-fit: scale-down}
+
+/* ----------------------- Hiệu ứng hover ảnh ----------------------- */
+
+/* figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+} */
+
+/* Zoom In #1 */
+.img-zoomIn img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-zoomIn:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* Zoom In #2 */
+.img-zoomIn-2 img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-zoomIn-2:hover img {
+	width: 350px;
+}
+
+/* Zoom Out #1 */
+.img-zoomOut img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-zoomOut:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* Zoom Out #2 */
+.img-zoomOut-2 img {
+	width: 400px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-zoomOut-2:hover img {
+	width: 300px;
+}
+
+/* Slide */
+.img-slide img {
+	margin-left: 30px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-slide:hover img {
+	margin-left: 0;
+}
+
+/* Rotate */
+.img-rotate img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-rotate:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+/* Blur */
+.img-blur img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-blur:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* Gray Scale */
+.img-grayScale img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-grayScale:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* Sepia */
+.img-sepia img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-sepia:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+/* Opacity #1 */
+.img-opacity img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-opacity:hover img {
+	opacity: .5;
+}
+
+/* Opacity #2 */
+.img-opacity-2 {
+	background: #1abc9c;
+}
+.img-opacity-2 img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-opacity-2:hover img {
+	opacity: .5;
+}
+
+/* Flashing */
+.img-flash:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Shine */
+.img-shine {
+	position: relative;
+}
+.img-shine::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.img-shine:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Circle */
+.img-circle {
+	position: relative;
+}
+.img-circle::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.img-circle:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}

@@ -1,0 +1,77 @@
+@use 'page-general';
+@use 'home-page';
+
+.promotion{
+    &--thumb{
+        margin-bottom: 30px;
+        >img{
+            height: 200px;
+        }
+    }
+    &--info{
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .desc{
+            margin-bottom: 20px;
+        }
+    }
+}
+.ptb-30{
+    padding: 30px 0;
+}
+.bnt-event{
+    white-space: nowrap;
+    padding: 0 10px;
+    border: none;
+    text-transform: uppercase;
+    background: $primary;
+    @include border-5;
+    color: $text-white;
+    display: block;
+    min-width: 100px;
+    text-align: right;
+    cursor: pointer;
+}
+.event-friend {
+    margin-bottom: 20px;
+    >input{
+        padding: 0 10px;
+        @include border-5;
+        border: 1px solid #dbdbdd;       
+        min-width: calc(100% - 125px); 
+    }
+}
+.group-copyLink{
+    position: relative;
+    min-width: calc(100% - 150px);
+    >input{
+        padding-right: 100px !important;
+    }
+    .copyLink{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+.share-social{
+    min-width: 150px;
+    margin-left: auto;
+    text-align: right;
+    >li{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+}
+.box-copy{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,36 @@
+
+// @import "style/general/_functions";
+// @import "style/general/_variables";
+// @import "style/general/_breakpoints";
+
+
+
+/*file style chung*/
+// @import 'style/general/_general';
+
+/*file style chung của trang*/
+@import 'style/module/page-general';
+
+/*file style trang chủ*/
+@import 'style/module/home-page';
+
+/*file style header*/
+@import 'style/module/header';
+
+/*file style slider-banner*/
+@import 'style/module/slider-banner';
+
+/*file style reset*/
+@import 'library/general/reset.css';
+
+/*file style camnangdulich*/
+@import 'style/module/camnangdulich';
+
+/*file style khachsan*/
+@import 'style/module/khachsan';
+
+/*file style khuyenmai*/
+@import 'style/module/khuyenmai';
+
+/*file style modal*/
+@import 'style/module/modal';

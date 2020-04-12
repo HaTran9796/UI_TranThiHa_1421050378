@@ -1,0 +1,260 @@
+
+@font-face{
+    font-family: 'nunito_san';
+    src: local('NunitoSans Black'),
+    local('NunitoSans-Black'),
+    url('fonts/nunito_san/NunitoSans-Black.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'nunito_san';
+    src: local('NunitoSans BlackItalic'),
+    local('NunitoSans-BlackItalic'),
+    url('fonts/nunito_san/NunitoSans-BlackItalic.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face{
+    font-family: 'nunito_san';
+    src: local('NunitoSans Regular'),
+    local('NunitoSans-Regular'),
+    url('fonts/nunito_san/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'nunito_san';
+    src: local('NunitoSans Italic'),
+    local('NunitoSans-Italic'),
+    url('fonts/nunito_san/NunitoSans-Italic.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'nunito_san';
+    src: local('NunitoSans Bold'),
+    local('NunitoSans-Bold'),
+    url('fonts/nunito_san/NunitoSans-Bold.ttf') format('truetype');
+    font-weight: 900;
+}
+/* end nunito_san chuẩn */
+
+body {
+	font-family: nunito_san;
+	font-size: 14px;
+}
+
+$primary: #3682DB;
+$success: #BF360C;
+$text-white: #ffffff;
+$color-black: #2C2C2C;
+$color-6D6D6D: #6D6D6D;
+.color-black{
+    color: $color-black;
+}
+.color__white{
+	color: $text-white;
+}
+.mb_60{
+	margin-bottom: 60px;
+}
+.mb_50{
+	margin-bottom: 50px;
+}
+.mb_40{
+	margin-bottom: 40px;
+}
+.mb_30{
+	margin-bottom: 30px;
+}
+.line-1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-4{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.line-5{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.line-6{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+// padding
+
+.ptb-60{
+    padding: 60px 0;
+}
+// pagination
+.page-items:not(:last-child){
+    margin-right: 10px;
+}
+.page-link{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #BDBDBD;
+    border: none;
+    color: $color-black;
+    font-weight: 900;
+}
+.page-link.active{
+    background: $primary;
+    color: $text-white;
+}
+.page-items.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    >i{
+        color: $text-white;
+    }
+}
+.breadcrumb{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    margin-bottom: 0;
+    &--item{
+        display: inline-block;
+        position: relative;
+       
+        &:not(:last-child){
+            padding-right: 24px;
+            &::before{
+                position: absolute;
+                content: '\f101';
+                display: block;
+                font-family: "Font Awesome 5 Free";
+                font-size: 14px;
+                top: 0;
+                right: 5px;
+                font-weight: 900;
+                color: $color-black;
+            }
+        }
+        >a{
+            color: $color-black !important;
+        }
+        &.active{
+            color: $primary;
+        }
+    }
+}
+
+#homepage{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .footer{
+        margin-top: auto;
+    }
+}
+
+// toppage
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $primary;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all .5 linear;
+    -webkit-transition: all .5 linear;
+    -moz-transition: all .5 linear;
+    -ms-transition: all .5 linear;
+    -o-transition: all .5 linear;
+}
+
+#myBtn:hover {
+    background-color: #00000050;
+}
+
+// end toppage
+
+// border
+@mixin border-5 {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+// rule
+.rule{
+    border: 0.5px dashed #BDBDBD;
+    margin-bottom: 10px;
+}
+// font
+.font-12{
+    font-size: 12px;
+}
+.font-13{
+    font-size: 13px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-15{
+    font-size: 15px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-17{
+    font-size: 17px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-19{
+    font-size: 19px;
+}
+.font-20{
+    font-size: 20px;
+}
+.text-jutify{
+    text-align: justify;
+}
+.text-bold{
+    font-weight: 900;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
