@@ -361,3 +361,23 @@ body {
     text-transform: uppercase;
 }
 
+.color-success{
+    color: $success;
+}
+// buttom
+.btn-42 {
+    height: 42px;
+    line-height: 42px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.heading-4{
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-tour{
+    margin-bottom: 24px;
+}
