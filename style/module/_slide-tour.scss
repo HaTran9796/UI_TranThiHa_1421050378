@@ -1,0 +1,25 @@
+
+.swiper-slide >img{
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 300px;
+    width: 100%;
+    .swiper-slide.swiper-slide-active{
+        margin-bottom: 10px;
+    }
+}
+.gallery-thumbs {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide{
+    width: 25%;
+    height: 100%;
+    opacity: 0.7;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
