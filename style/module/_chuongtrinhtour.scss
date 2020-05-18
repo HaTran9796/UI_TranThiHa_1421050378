@@ -49,6 +49,7 @@
     background: $primary;
     color: $white;
     font-weight: bold;
+    display: inline-block;
 }
 .btn__contact{
     border: none;
@@ -247,4 +248,8 @@ textarea{
             margin-bottom: 24px;
         }
     }
+}
+
+.contact--textarea{
+    background: $white;
 }

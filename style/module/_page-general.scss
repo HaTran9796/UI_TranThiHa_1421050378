@@ -48,6 +48,12 @@ body {
 .color__white{
 	color: $text-white;
 }
+.yellow{
+    color: $yellow;
+}
+.red{
+    color: $red;
+}
 .mb_60{
 	margin-bottom: 60px;
 }
@@ -363,6 +369,11 @@ body {
 
 .color-success{
     color: $success;
+}
+.btn-color-red{
+    background: $success;
+    color: $white;
+    font-weight: bold;
 }
 // buttom
 .btn-42 {
