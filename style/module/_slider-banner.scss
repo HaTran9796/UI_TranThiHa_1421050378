@@ -3,19 +3,35 @@
 
 .group--banner{
     position: relative;
-    .group--banner-swiper{
+    &__overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        -webkit-transform: translate(-50% , -50%);
+        -moz-transform: translate(-50% , -50%);
+        -ms-transform: translate(-50% , -50%);
+        -o-transform: translate(-50% , -50%);
+        z-index: 100;
+        width: 100%;
+        >*{
+            color: $white;
+            text-align: center;
+        }
+    }
+    .swiper-slide{
         position: relative;
-        // &::before{
-        //     display: block;
-        //     content: '';
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     background: #00000080;
-        //     z-index: 2;
-        // }
+        &::before{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #00000080;
+            z-index: 2;
+        }
     }
 }
 
@@ -67,4 +83,33 @@
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: $primary;
+}
+.overlay{
+    &__title{
+        font-size: 48px;
+        font-weight: bold;
+        text-transform: uppercase;
+        >span{
+            font-size: 64px;
+            font-style: italic;
+        }
+    }
+    &__desc{
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.gallery-top{
+    .swiper-slide{
+        position: relative;
+        >img{
+            height: 450px;
+        }
+    }
+}
+
+a.btn-42{
+    &:hover{
+        color: $white;
+    }
 }
