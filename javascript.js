@@ -117,3 +117,9 @@ function topFunction() {
 
 // icon feather
 feather.replace()
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  const div = document.getElementsByTagName('div')
+  const last = div[div.length - 1]
+  last.style.display = 'none'
+});
