@@ -2,6 +2,8 @@
 .swiper-slide >img{
     background-size: cover;
     background-position: center;
+    object-fit: cover;
+    width: 100%;
 }
 .gallery-top {
     height: 300px;

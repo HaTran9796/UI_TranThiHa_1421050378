@@ -11690,7 +11690,9 @@ a.btn-42:hover {
 /*file style slide-tour*/
 .swiper-slide > img {
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  object-fit: cover;
+  width: 100%; }
 
 .gallery-top {
   height: 300px;
